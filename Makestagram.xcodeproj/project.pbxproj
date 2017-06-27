@@ -15,6 +15,8 @@
 		07191BFC1F01916100A21112 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07191BFA1F01916100A21112 /* GoogleService-Info.plist */; };
 		07191C071F01AE4300A21112 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07191C061F01AE4300A21112 /* Login.storyboard */; };
 		07191C091F01AF4E00A21112 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07191C081F01AF4E00A21112 /* LoginViewController.swift */; };
+		07191C101F02D84F00A21112 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07191C0F1F02D84F00A21112 /* User.swift */; };
+		07191C121F02FF9300A21112 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07191C111F02FF9300A21112 /* CreateUsernameViewController.swift */; };
 		CF7CDF7AF0EB2AA4DBC59822 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3E2B180CDBEB8590587376 /* Pods_Makestagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		07191BFB1F01916100A21112 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
 		07191C061F01AE4300A21112 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		07191C081F01AF4E00A21112 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		07191C0F1F02D84F00A21112 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		07191C111F02FF9300A21112 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		9CF9BF77624BA6602FF8513E /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		C9F250E613D1B99EFD1D5B70 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		FE3E2B180CDBEB8590587376 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				07191BCE1F017A0200A21112 /* AppDelegate.swift */,
+				07191C0C1F02D83100A21112 /* Models */,
 				07191C001F01A86500A21112 /* View Controllers */,
 				07191BFE1F01A83700A21112 /* Supporting Files */,
 				07191C011F01ADD100A21112 /* Storyboards */,
@@ -91,6 +96,7 @@
 			children = (
 				07191BF41F01914A00A21112 /* ViewController.swift */,
 				07191C081F01AF4E00A21112 /* LoginViewController.swift */,
+				07191C111F02FF9300A21112 /* CreateUsernameViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -102,6 +108,14 @@
 				07191C061F01AE4300A21112 /* Login.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		07191C0C1F02D83100A21112 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07191C0F1F02D84F00A21112 /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		62F490DD76F16E00371E47F7 /* Pods */ = {
@@ -246,8 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07191C101F02D84F00A21112 /* User.swift in Sources */,
 				07191C091F01AF4E00A21112 /* LoginViewController.swift in Sources */,
 				07191BF51F01914A00A21112 /* ViewController.swift in Sources */,
+				07191C121F02FF9300A21112 /* CreateUsernameViewController.swift in Sources */,
 				07191BCF1F017A0200A21112 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
