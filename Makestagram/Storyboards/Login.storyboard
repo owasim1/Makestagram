@@ -32,7 +32,6 @@
                                 <state key="normal" title="Register or Log In"/>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="4QV-fI-GAh" eventType="touchUpInside" id="dU0-Nc-tEy"/>
-                                    <segue destination="jmD-9b-FYC" kind="show" identifier="toCreateUsername" id="Ssp-TF-173"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e6A-O7-Dkj">
@@ -83,6 +82,7 @@
                     <navigationItem key="navigationItem" id="TPX-Jx-arQ"/>
                     <connections>
                         <outlet property="loginButton" destination="R33-8L-AH7" id="cDW-6s-fco"/>
+                        <segue destination="jmD-9b-FYC" kind="show" identifier="toCreateUsername" id="NVs-0K-jDQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3A-I3-jL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -143,6 +143,9 @@
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="nextButtonTapped:" destination="jmD-9b-FYC" eventType="touchUpInside" id="V73-ZH-71m"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -159,6 +162,10 @@
                             <constraint firstItem="SE6-2P-3WT" firstAttribute="leading" secondItem="EwJ-qj-d1r" secondAttribute="leading" constant="10" id="HaA-EY-5lG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="OTL-Om-a39" id="J0e-P1-ccj"/>
+                        <outlet property="usernameTextField" destination="QrW-Uh-CPb" id="WbY-2f-hHu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="36N-sP-xrL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
