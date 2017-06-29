@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R33-8L-AH7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R33-8L-AH7">
                                 <rect key="frame" x="35" y="277" width="305" height="44"/>
                                 <color key="backgroundColor" red="0.2196078431372549" green="0.59215686274509804" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -34,7 +34,7 @@
                                     <action selector="loginButtonTapped:" destination="4QV-fI-GAh" eventType="touchUpInside" id="dU0-Nc-tEy"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e6A-O7-Dkj">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6A-O7-Dkj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="shm-rj-jwX">
@@ -68,7 +68,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="e6A-O7-Dkj" firstAttribute="top" secondItem="p62-ik-7vL" secondAttribute="bottom" constant="-33" id="0yS-YL-T6C"/>
+                            <constraint firstItem="e6A-O7-Dkj" firstAttribute="top" secondItem="p62-ik-7vL" secondAttribute="bottom" constant="-20" id="0yS-YL-T6C"/>
                             <constraint firstItem="e6A-O7-Dkj" firstAttribute="leading" secondItem="OEE-RO-uKY" secondAttribute="leading" id="7gE-cS-HvA"/>
                             <constraint firstItem="R33-8L-AH7" firstAttribute="leading" secondItem="OEE-RO-uKY" secondAttribute="leadingMargin" constant="19" id="Iea-c0-9zO"/>
                             <constraint firstItem="e6A-O7-Dkj" firstAttribute="leading" secondItem="OEE-RO-uKY" secondAttribute="leading" id="Len-ol-z6w"/>
