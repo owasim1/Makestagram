@@ -23,6 +23,9 @@
 		07191C1E1F04499C00A21112 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07191C1D1F04499C00A21112 /* FindFriendsViewController.swift */; };
 		07191C201F05730100A21112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07191C1F1F05730100A21112 /* Assets.xcassets */; };
 		07191C221F05804900A21112 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07191C211F05804900A21112 /* MainTabBarController.swift */; };
+		07434D7B1F06235A007E5502 /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07434D7A1F06235A007E5502 /* MGPhotoHelper.swift */; };
+		07434D7D1F06EB7C007E5502 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07434D7C1F06EB7C007E5502 /* AdSupport.framework */; };
+		07434D7F1F06EBCD007E5502 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07434D7E1F06EBCD007E5502 /* iAd.framework */; };
 		CF7CDF7AF0EB2AA4DBC59822 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3E2B180CDBEB8590587376 /* Pods_Makestagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 		07191C1D1F04499C00A21112 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
 		07191C1F1F05730100A21112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07191C211F05804900A21112 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		07434D7A1F06235A007E5502 /* MGPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPhotoHelper.swift; sourceTree = "<group>"; };
+		07434D7C1F06EB7C007E5502 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		07434D7E1F06EBCD007E5502 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		9CF9BF77624BA6602FF8513E /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		C9F250E613D1B99EFD1D5B70 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		FE3E2B180CDBEB8590587376 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07434D7F1F06EBCD007E5502 /* iAd.framework in Frameworks */,
+				07434D7D1F06EB7C007E5502 /* AdSupport.framework in Frameworks */,
 				CF7CDF7AF0EB2AA4DBC59822 /* Pods_Makestagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +93,7 @@
 			children = (
 				07191C1F1F05730100A21112 /* Assets.xcassets */,
 				07191BCE1F017A0200A21112 /* AppDelegate.swift */,
+				07434D771F062239007E5502 /* Helper */,
 				07191C131F0318E200A21112 /* Services */,
 				07191C181F04174300A21112 /* Extensions */,
 				07191C0C1F02D83100A21112 /* Models */,
@@ -152,6 +161,14 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		07434D771F062239007E5502 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				07434D7A1F06235A007E5502 /* MGPhotoHelper.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		62F490DD76F16E00371E47F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +181,8 @@
 		8815E3AAAE5A3DB7BBAA68CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07434D7E1F06EBCD007E5502 /* iAd.framework */,
+				07434D7C1F06EB7C007E5502 /* AdSupport.framework */,
 				FE3E2B180CDBEB8590587376 /* Pods_Makestagram.framework */,
 			);
 			name = Frameworks;
@@ -300,6 +319,7 @@
 				07191C221F05804900A21112 /* MainTabBarController.swift in Sources */,
 				07191C151F0318F200A21112 /* UserService.swift in Sources */,
 				07191C1C1F04498A00A21112 /* HomeViewController.swift in Sources */,
+				07434D7B1F06235A007E5502 /* MGPhotoHelper.swift in Sources */,
 				07191C1A1F04176F00A21112 /* Storyboard+Utility.swift in Sources */,
 				07191C1E1F04499C00A21112 /* FindFriendsViewController.swift in Sources */,
 				07191C171F04153900A21112 /* Constants.swift in Sources */,

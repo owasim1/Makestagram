@@ -54,7 +54,7 @@
         <!--Find Friends View Controller-->
         <scene sceneID="ymC-Pg-vZ6">
             <objects>
-                <viewController id="oKx-uR-yVi" customClass="FindFriendsViewController" sceneMemberID="viewController">
+                <viewController id="oKx-uR-yVi" customClass="FindFriendsViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ix0-8y-sAp"/>
                         <viewControllerLayoutGuide type="bottom" id="Epz-oD-SHu"/>
