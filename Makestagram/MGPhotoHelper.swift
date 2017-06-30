@@ -16,16 +16,16 @@ class MGPhotoHelper: NSObject {
         let alertController = UIAlertController(title: nil, message: "Where do you want to get your picture from?", preferredStyle: .actionSheet)
     
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            let capturePhotoAction = UIAlertAction(title: "Take Photo", style: .default, handler: { action in
-                // do nothing yet...
+            let capturePhotoAction = UIAlertAction(title: "Take Photo", style: .default, handler: { [unowned self] action in
+                self.presentImagePickerController(with: .camera, from: viewController)
             })
             
             alertController.addAction(capturePhotoAction)
         }
-
+        
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-            let uploadAction = UIAlertAction(title: "Upload from Library", style: .default, handler: { action in
-                // do nothing yet...
+            let uploadAction = UIAlertAction(title: "Upload from Library", style: .default, handler: { [unowned self] action in
+                self.presentImagePickerController(with: .photoLibrary, from: viewController)
             })
             
             alertController.addAction(uploadAction)
